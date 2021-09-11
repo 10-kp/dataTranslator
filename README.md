@@ -1,8 +1,8 @@
 # dataTranslator
 
-[![](https://img.shields.io/badge/-48%25-yellow)]()
-[![](https://img.shields.io/badge/-39%25-blue)]()
-[![](https://img.shields.io/badge/-13%25-red)]()
+[![](https://img.shields.io/badge/-%25-yellow)]()
+[![](https://img.shields.io/badge/-%25-blue)]()
+[![](https://img.shields.io/badge/-%25-red)]()
 
 ## Table of Contents
 
