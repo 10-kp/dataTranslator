@@ -1,15 +1,18 @@
 import React from 'react';
+import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
+import Navbar from './Components/Navbar';
+import Home from './Components/Home';
+import Data from './Components/Data';
 
 function App() {
   return (
     <Router>
-      <div className='App'>
-        <header className='App-header'>
-          <p>Welcome to Data Translator page</p>
-          <a>Learn more about Data Analytics </a>
-          <a>Learn more about Data Analytics </a>
-        </header>
-      </div>
+      <Navbar />
+      <Switch>
+        <Home />
+
+        <Data />
+      </Switch>
     </Router>
   );
 }
