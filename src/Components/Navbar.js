@@ -1,89 +1,44 @@
-import React, { useState } from 'react';
 import Navbar from 'react-bootstrap/Navbar';
 import Nav from 'react-bootstrap/Nav';
-import Container from 'react-bootstrap/Container';
-import { Link } from 'react-router-dom';
-// import {
-//   AiOutlineHome,
-//   AiOutlineFundProjectionScreen,
-//   AiOutlineUser,
-// } from 'react-icons/ai';
+import { LinkContainer } from 'react-router-bootstrap';
 
 function NavBar() {
-  const [expand, updateExpanded] = useState(false);
-  const [navColour, updateNavbar] = useState(false);
-
-  function scrollHandler() {
-    if (window.scrollY >= 20) {
-      updateNavbar(true);
-    } else {
-      updateNavbar(false);
-    }
-  }
-
-  window.addEventListener('scroll', scrollHandler);
-
   return (
-    <Navbar
-      expanded={expand}
-      fixed='top'
-      expand='md'
-      className={navColour ? 'sticky' : 'navbar'}
-    >
-      <Container>
-        <Navbar.Brand href='/'></Navbar.Brand>
-        <Navbar.Toggle
-          aria-controls='responsive-navbar-nav'
-          onClick={() => {
-            updateExpanded(expand ? false : 'expanded');
-          }}
-        >
-          <span></span>
-          <span></span>
-          <span></span>
-        </Navbar.Toggle>
-        <Navbar.Collapse id='responsive-navbar-nav'>
-          <Nav className='ml-auto' defaultActiveKey='#home'>
-            <Nav.Item>
-              <Nav.Link as={Link} to='/' onClick={() => updateExpanded(false)}>
-                Home
-              </Nav.Link>
-            </Nav.Item>
-
-            <Nav.Item>
-              <Nav.Link
-                as={Link}
-                to='/about'
-                onClick={() => updateExpanded(false)}
-              >
-                About
-              </Nav.Link>
-            </Nav.Item>
-
-            <Nav.Item>
-              <Nav.Link
-                as={Link}
-                to='/Data'
-                onClick={() => updateExpanded(false)}
-              >
-                Data Translator
-              </Nav.Link>
-            </Nav.Item>
-
-            {/* <Nav.Item>
-              <Nav.Link
-                as={Link}
-                to='/contact'
-                onClick={() => updateExpanded(false)}
-              >
-                <CgFileDocument style={{ marginBottom: '2px' }} /> Contact
-              </Nav.Link>
-            </Nav.Item> */}
+    <div className='App container py-3'>
+      <Navbar collapseOnSelect bg='light' expand='md' className='mb-3'>
+        <LinkContainer to='/'>
+          <Navbar.Brand className='font-weight-bold text-muted'>
+            Home
+          </Navbar.Brand>
+        </LinkContainer>
+        <Navbar.Toggle />
+        <Navbar.Collapse className='justify-content-end'>
+          <Nav activeKey={window.location.pathname}>
+            <LinkContainer to='/Data'>
+              <Nav.Link>Data Translator</Nav.Link>
+            </LinkContainer>
+            {/* <LinkContainer to='/login'>
+              <Nav.Link>Login</Nav.Link>
+            </LinkContainer> */}
           </Nav>
         </Navbar.Collapse>
-      </Container>
-    </Navbar>
+      </Navbar>
+    </div>
   );
+  //   <Navbar>
+  //     <Container>
+  //       <Navbar href='/'></Navbar>
+
+  //       <Nav.Item>
+  //         <Nav.Link as={Link} to='/Home'></Nav.Link>Home
+  //       </Nav.Item>
+
+  //       <Nav.Item>Data Translator</Nav.Item>
+  //       <Nav.Item>Data Scientists</Nav.Item>
+  //       <Nav.Item>Data Engineers</Nav.Item>
+  //     </Container>
+  //   </Navbar>
+  // );
 }
 
 export default NavBar;
