@@ -4,41 +4,26 @@ import { LinkContainer } from 'react-router-bootstrap';
 
 function NavBar() {
   return (
-    <div className='App container py-3'>
-      <Navbar collapseOnSelect bg='light' expand='md' className='mb-3'>
+    <>
+      <Navbar>
         <LinkContainer to='/'>
-          <Navbar.Brand className='font-weight-bold text-muted'>
-            Home
-          </Navbar.Brand>
+          <Navbar.Brand>Home</Navbar.Brand>
         </LinkContainer>
-        <Navbar.Toggle />
-        <Navbar.Collapse className='justify-content-end'>
-          <Nav activeKey={window.location.pathname}>
-            <LinkContainer to='/Data'>
-              <Nav.Link>Data Translator</Nav.Link>
-            </LinkContainer>
-            {/* <LinkContainer to='/login'>
-              <Nav.Link>Login</Nav.Link>
-            </LinkContainer> */}
-          </Nav>
-        </Navbar.Collapse>
+        <LinkContainer to='/DataTranslator'>
+          <Nav.Link>Data Translator</Nav.Link>
+        </LinkContainer>
+        <LinkContainer to='/DataScientist'>
+          <Nav.Link>Data Scientist</Nav.Link>
+        </LinkContainer>
+        <LinkContainer to='/DataEngineer'>
+          <Nav.Link>Data Engineer</Nav.Link>
+        </LinkContainer>
+        <LinkContainer to='/UxDesign'>
+          <Nav.Link>UX Designers</Nav.Link>
+        </LinkContainer>
       </Navbar>
-    </div>
+    </>
   );
-  //   <Navbar>
-  //     <Container>
-  //       <Navbar href='/'></Navbar>
-
-  //       <Nav.Item>
-  //         <Nav.Link as={Link} to='/Home'></Nav.Link>Home
-  //       </Nav.Item>
-
-  //       <Nav.Item>Data Translator</Nav.Item>
-  //       <Nav.Item>Data Scientists</Nav.Item>
-  //       <Nav.Item>Data Engineers</Nav.Item>
-  //     </Container>
-  //   </Navbar>
-  // );
 }
 
 export default NavBar;
