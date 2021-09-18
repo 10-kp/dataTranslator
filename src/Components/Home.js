@@ -14,14 +14,14 @@ function Home() {
 
       <img src={datapic} width='500' alt='pic1' />
 
-      <h3>
+      <p>
         Data is split into 3 parts: Analytical approaches - descriptive,
         predictive, and prescriptive.
-      </h3>
+      </p>
 
       <p>To read more on Data Translators</p>
       <a href='https://www.tandfonline.com/doi/full/10.1080/2058802X.2020.1735794'>
-        LINK{' '}
+        LINK
       </a>
     </>
   );

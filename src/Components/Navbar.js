@@ -18,8 +18,8 @@ function NavBar() {
         <LinkContainer to='/DataEngineer'>
           <Nav.Link>Data Engineer</Nav.Link>
         </LinkContainer>
-        <LinkContainer to='/UxDesign'>
-          <Nav.Link>UX Designers</Nav.Link>
+        <LinkContainer to='/DataAnalyst'>
+          <Nav.Link>Data Analyst</Nav.Link>
         </LinkContainer>
       </Navbar>
     </>

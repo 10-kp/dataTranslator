@@ -5,7 +5,7 @@ import Home from './Components/Home';
 import Data from './Components/DataTranslator';
 import Scientist from './Components/DataScientist';
 import Engineers from './Components/DataEngineer';
-import Design from './Components/UxDesign';
+import Analyst from './Components/DataAnalyst';
 
 function App() {
   return (
@@ -16,7 +16,7 @@ function App() {
         <Route exact path='/Data Translator' component={Data} />
         <Route exact path='/DataScientist' component={Scientist} />
         <Route exact path='/DataEngineer' component={Engineers} />
-        <Route exact path='/Designers' component={Design} />
+        <Route exact path='/DataAnalyst' component={Analyst} />
         <Data />
       </Switch>
     </Router>
