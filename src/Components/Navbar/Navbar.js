@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import { MenuItems } from './MenuItems';
 import './Navbar.css';
-
+// import { Button } from '../Button';
 // import Navbar from 'react-bootstrap/Navbar';
 // import Nav from 'react-bootstrap/Nav';
 // import { LinkContainer } from 'react-router-bootstrap';
@@ -10,15 +10,19 @@ import './Navbar.css';
 class Navbar extends Component {
   state = { clicked: false };
 
+  handleClick = () => {
+    this.setState({ clicked: !this.state.clicked });
+  };
+
   render() {
     return (
       <nav className='NavbarItems'>
         <h1 className='navbar-logo'>
-          React<i className='fab-fa-react'></i>
+          <i className='fab-fa-home'></i>
         </h1>
         <div className='menu-icon' onClick={this.handleClick}></div>
-        <i className={this.state.clicked ? 'fas fa-times' : 'fas fa-bars'}> </i>
-        <ul>
+        <i className={this.state.clicked ? 'fas fa-times' : 'fas fa-home'}></i>
+        <ul className={this.state.clicked ? 'nav-menu active' : 'nav-menu'}>
           {MenuItems.map((item, index) => {
             return (
               <li key={index}>
@@ -29,6 +33,7 @@ class Navbar extends Component {
             );
           })}
         </ul>
+        {/* <Button></Button> */}
       </nav>
     );
   }

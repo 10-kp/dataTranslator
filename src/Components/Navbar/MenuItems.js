@@ -1,27 +1,27 @@
 export const MenuItems = [
   {
     title: 'Home',
-    url: '#',
+    url: '/',
     cName: 'nav-links',
   },
   {
     title: 'Data Analyst',
-    url: '#',
+    url: 'DataAnalyst',
     cName: 'nav-links',
   },
   {
     title: 'Data Engineer',
-    url: '#',
+    url: 'DataEngineer',
     cName: 'nav-links',
   },
   {
     title: 'Data Scientist',
-    url: '#',
+    url: 'DataScientist',
     cName: 'nav-links',
   },
   {
     title: 'Data Translator',
-    url: '#',
+    url: 'DataTranslator',
     cName: 'nav-links',
   },
 ];
