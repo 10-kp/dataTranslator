@@ -1,19 +1,19 @@
 import React from 'react';
-import Navbar from './Components/Navbar/Navbar';
 import './App.css';
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
-// import Navbar from './Components/Navbar/Navbar';
 import Home from './Components/Home';
 import Data from './Components/DataTranslator';
 import Scientist from './Components/DataScientist';
 import Engineers from './Components/DataEngineer';
 import Analyst from './Components/DataAnalyst';
+import NavbarComp from './Components/NavbarComp';
 
 function App() {
   return (
     <Router>
-      <Navbar />
+      <NavbarComp />
       <Switch>
         {/* Use Switch */}
         <Route exact path='/'>
