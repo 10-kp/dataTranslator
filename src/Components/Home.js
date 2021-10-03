@@ -12,6 +12,13 @@ function Home() {
         their projects over the entire project lifecycle.
       </p>
 
+      <p>
+        A translator looks for business problems or processes that can be
+        streamlined, brings those issues to the data team, drives buy-in from
+        stakeholders, then works with data scientists and engineers to hammer
+        out a solution.
+      </p>
+
       <img src={datapic} width='500' alt='pic1' />
 
       <p>

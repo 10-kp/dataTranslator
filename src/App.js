@@ -9,6 +9,7 @@ import Scientist from './Components/DataScientist';
 import Engineers from './Components/DataEngineer';
 import Analyst from './Components/DataAnalyst';
 import NavbarComp from './Components/NavbarComp';
+import DataAnalytics from './Components/DataAnalytics';
 
 function App() {
   return (
@@ -27,6 +28,9 @@ function App() {
         </Route>
         <Route exact path='/DataEngineer'>
           <Engineers />
+        </Route>
+        <Route exact path='/DataAnalytics'>
+          <DataAnalytics />
         </Route>
         {/* Use another way to render component */}
         <Route exact path='/DataAnalyst' component={Analyst} />

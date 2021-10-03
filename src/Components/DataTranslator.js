@@ -1,4 +1,5 @@
 import React from 'react';
+import dataTranlatorRole from '../Assets/translatorRole.jpg';
 
 function Data() {
   return (
@@ -19,7 +20,30 @@ function Data() {
         <li>Act as a soft skills specialist for data science</li>
       </ul>
 
-      <p>Challenges faced by Data Translators:</p>
+      <img src={dataTranlatorRole} width='750' alt='pic2' />
+
+      <h4>Skills of a data translator</h4>
+      <ul>
+        <li>
+          Desire to ask questions and get a deeper understanding of issues
+          business and data
+        </li>
+        <li>
+          Confidence to challenge perceptions and biases of individuals at every
+          level of the organization
+        </li>
+        <li>Solid understanding of business requirements and vernacular</li>
+        <li>
+          Analytics knowledge or desire to acquire it to be effective
+          communicating with data scientists
+        </li>
+        <li>
+          Passion to give others an advantage of understanding by using
+          accessible language
+        </li>
+      </ul>
+
+      <h4>Challenges faced by Data Translators</h4>
       <ul>
         <li>Insufficient, incorrect or conflicting data</li>
         <li>Failure to understand the real business problem</li>
