@@ -15,7 +15,7 @@ export default class NavbarComp extends Component {
     return (
       <Router>
         <div>
-          <Navbar className='nav' bg='dark' variant={'dark'} expand='lg'>
+          <Navbar bg='dark' variant={'dark'} expand='lg'>
             <Container>
               <Navbar.Brand href='/'></Navbar.Brand>
               <Navbar.Toggle aria-controls='basic-navbar-nav' />

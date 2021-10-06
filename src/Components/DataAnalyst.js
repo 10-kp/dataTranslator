@@ -21,6 +21,37 @@ function Analyst() {
           forecast or guide business activity.
         </li>
       </ul>
+      <h3>Data Analyst Role</h3>
+      <ul>
+        <li>
+          Data analysts mostly work with an organization's structured data
+        </li>
+        <li>
+          They create reports, dashboards, and other visualizations on data
+          associated with customers, business processes, market economics, and
+          more to provide insights to senior management and business leaders in
+          support of decision-making efforts
+        </li>
+      </ul>
+      <h3>Data Analyst Responsibilites</h3>
+      <p>
+        Data analysts seek to understand the questions the business needs to
+        answer and determine whether those questions can be answered by data.
+        They must understand the technical issues associated with collecting
+        data, analyzing data, and reporting.
+      </p>
+      <ul>
+        <li>
+          Analyzing data using statistical techniques and providing reports
+        </li>
+        <li>
+          Developing and implementing databases and data collection systems
+        </li>
+        <li>
+          Acquiring data from primary and secondary sources and maintain data
+          systems
+        </li>
+      </ul>
     </>
   );
 }

@@ -19,12 +19,7 @@ function Home() {
         out a solution.
       </p>
 
-      <img src={datapic} width='500' alt='pic1' />
-
-      <p>
-        Data is split into 3 parts: Analytical approaches - descriptive,
-        predictive, and prescriptive.
-      </p>
+      <img src={datapic} width='450' alt='pic1' />
 
       <p>To read more on Data Translators</p>
       <a href='https://www.tandfonline.com/doi/full/10.1080/2058802X.2020.1735794'>

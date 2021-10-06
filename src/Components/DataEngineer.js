@@ -6,21 +6,55 @@ function Engineers() {
       <h1>Data Engineer</h1>
       <ul>
         <li>
-          Data engineers are responsible for designing, building, and
-          maintaining datasets that can be leveraged in data projects. As such,
-          they closely work with both data scientists and data analysts.
+          Data engineers are responsible for finding trends in data sets and
+          developing algorithms to help make raw data more useful to the
+          enterprise
         </li>
         <li>
-          {' '}
-          Much of the work data engineers perform is related to preparing the
-          infrastructure and ecosystem that the data team and organization rely
-          on.
+          Data engineers are often responsible for building algorithms to help
+          give easier access to raw data
         </li>
         <li>
-          For example, data engineers collect and integrate data from various
-          sources, build data platforms for use by other data team members, and
-          optimize and maintain the data warehouse.
+          Data engineers also need to understand how to optimize data retrieval
+          and how to develop dashboards, reports and other visualizations for
+          stakeholders. Depending on the organization, data engineers may also
+          be responsible for communicating data trends.
         </li>
+      </ul>
+
+      <h3>Data Engineer Roles</h3>
+      <ul>
+        <li>
+          Generalist: Data engineers wear many hats as one of the few
+          “data-focused” people in the company. Responsible for every step of
+          the data process, from managing data to analyzing it.
+        </li>
+        <li>
+          Pipeline-centric: Data engineers work alongside data scientists to
+          help make use of the data they collect. Pipeline-centric data
+          engineers need “in-depth knowledge of distributed systems and computer
+          science,” according to Dataquest.
+        </li>
+        <li>
+          Database-centric: Data engineers focus on analytics databases, work
+          with data warehouses across multiple databases and develop table
+          schemas.
+        </li>
+      </ul>
+      <h3>Data Engineer Responsbilities</h3>
+      <p>
+        Data engineers are tasked with managing and organizing data, while also
+        keeping an eye out for trends or inconsistencies that will impact
+        business goals
+      </p>
+      <p>
+        Some of the most common responsibilities for a data engineer include:
+      </p>
+      <ul>
+        <li>Develop, construct, test and maintain architectures</li>
+        <li>Align architecture with business requirements</li>
+        <li>Data acquisition</li>
+        <li>Develop data set processes</li>
       </ul>
     </>
   );
