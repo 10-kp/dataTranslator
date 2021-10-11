@@ -1,5 +1,5 @@
 import React from 'react';
-import dataCircle from '../Assets/dataAnalyticsCircle.png';
+import dataCircle from '../Pics/dataAnalyticsCircle.png';
 
 function DataAnaytics() {
   return (

@@ -1,5 +1,5 @@
 import React from 'react';
-import dataTranlatorRole from '../Assets/translatorRole.jpg';
+import dataTranlatorRole from '../Pics/translatorRole.jpg';
 
 function Data() {
   return (

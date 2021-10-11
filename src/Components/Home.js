@@ -1,5 +1,5 @@
 import React from 'react';
-import datapic from '../Assets/dataFlow.png';
+import datapic from '../Pics/dataFlow.png';
 
 function Home() {
   return (
