@@ -1,8 +1,13 @@
-import React, { Component } from 'react';
-import classnames from 'classnames';
+import React from 'react';
 import {
-  Button,
-  Collapse,
+  UncontrolledCollapse,
+  DropdownToggle,
+  DropdownMenu,
+  DropdownItem,
+  UncontrolledDropdown,
+  FormGroup,
+  Form,
+  Input,
   NavbarBrand,
   Navbar,
   NavItem,
@@ -11,33 +16,101 @@ import {
   Container,
 } from 'reactstrap';
 
-export default class NavbarComp extends Component {
-  render() {
-    return (
-      <Navbar bg='dark' variant={'dark'} expand='lg'>
+// core components
+
+function NavbarComp() {
+  const [bodyClick, setBodyClick] = React.useState(false);
+  return (
+    <>
+      {bodyClick ? (
+        <div
+          id='bodyClick'
+          onClick={() => {
+            document.documentElement.classList.toggle('nav-open');
+            setBodyClick(false);
+          }}
+        />
+      ) : null}
+      <Navbar color='primary' expand='lg'>
         <Container>
-          <Navbar href='/'></Navbar>
-          <Navbar aria-controls='basic-navbar-nav' />
-          <Navbar id='basic-navbar-nav'>
-            <Nav className='me-auto'>
-              <Nav href='/'>Home</Nav>
-              <Nav href='/DataTranslator'>Data Translator</Nav>
-              <Nav href='/DataAnalytics'>Data Analytics</Nav>
-              {/* <Nav.Link href='/DataEngineer'>2</Nav.Link>
-                  <Nav.Link href='/DataAnalyst'>3</Nav.Link> */}
-              <Nav title='Data Team' id='basic-nav-dropdown'>
-                <Nav href='/DataScientist'>Data Scientist</Nav>
-                <Nav href='DataEngineer'>Data Engineer</Nav>
-                <Nav href='DataAnalyst'>Data Analyst</Nav>
-                {/* <NavDropdown.Divider />
-                    <NavDropdown.Item href='#action/3.4'>
-                      Separated link
-                    </NavDropdown.Item> */}
-              </Nav>
+          <NavbarBrand href='/' onClick={(e) => e.preventDefault()}>
+            Data Translator
+          </NavbarBrand>
+          <button
+            className='navbar-toggler'
+            id='navbarNavDropdown'
+            type='button'
+            onClick={() => {
+              document.documentElement.classList.toggle('nav-open');
+              setBodyClick(true);
+            }}
+          >
+            <span className='navbar-toggler-icon' />
+          </button>
+          <UncontrolledCollapse navbar toggler='#navbarNavDropdown'>
+            <Nav navbar>
+              <NavItem className='active'>
+                <NavLink href='/' onClick={(e) => e.preventDefault()}>
+                  Home <span className='sr-only'>(current)</span>
+                </NavLink>
+              </NavItem>
+              <NavItem>
+                <NavLink
+                  href='/DataTranslator'
+                  onClick={(e) => e.preventDefault()}
+                >
+                  Data Translator
+                </NavLink>
+              </NavItem>
+              <NavItem>
+                <NavLink
+                  href='/DataAnalytics'
+                  onClick={(e) => e.preventDefault()}
+                >
+                  Data Analytics
+                </NavLink>
+              </NavItem>
+
+              <UncontrolledDropdown nav>
+                <DropdownToggle
+                  aria-haspopup={true}
+                  caret
+                  color='default'
+                  data-toggle='dropdown'
+                  href='#pablo'
+                  id='navbarDropdownMenuLink'
+                  nav
+                  onClick={(e) => e.preventDefault()}
+                >
+                  Data Analytics Team
+                </DropdownToggle>
+                <DropdownMenu aria-labelledby='navbarDropdownMenuLink'>
+                  <DropdownItem
+                    href='/DataScientist'
+                    onClick={(e) => e.preventDefault()}
+                  >
+                    Data Scientist
+                  </DropdownItem>
+                  <DropdownItem
+                    href='/DataEngineer'
+                    onClick={(e) => e.preventDefault()}
+                  >
+                    Data Engineer
+                  </DropdownItem>
+                  <DropdownItem
+                    href='/DataAnalyst'
+                    onClick={(e) => e.preventDefault()}
+                  >
+                    Data Analyst
+                  </DropdownItem>
+                </DropdownMenu>
+              </UncontrolledDropdown>
             </Nav>
-          </Navbar>
+          </UncontrolledCollapse>
         </Container>
       </Navbar>
-    );
-  }
+    </>
+  );
 }
+
+export default NavbarComp;
