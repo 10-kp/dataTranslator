@@ -1,116 +1,76 @@
-import React from 'react';
+import React, { useState } from 'react';
 import {
-  UncontrolledCollapse,
+  Nav,
+  NavItem,
+  Dropdown,
+  DropdownItem,
   DropdownToggle,
   DropdownMenu,
-  DropdownItem,
-  UncontrolledDropdown,
-  FormGroup,
-  Form,
-  Input,
-  NavbarBrand,
-  Navbar,
-  NavItem,
   NavLink,
-  Nav,
-  Container,
 } from 'reactstrap';
 
-// core components
+const NavbarComp = (props) => {
+  const [dropdownOpen, setDropdownOpen] = useState(false);
 
-function NavbarComp() {
-  const [bodyClick, setBodyClick] = React.useState(false);
+  const toggle = () => setDropdownOpen(!dropdownOpen);
+
   return (
-    <>
-      {bodyClick ? (
-        <div
-          id='bodyClick'
-          onClick={() => {
-            document.documentElement.classList.toggle('nav-open');
-            setBodyClick(false);
-          }}
-        />
-      ) : null}
-      <Navbar color='primary' expand='lg'>
-        <Container>
-          <NavbarBrand href='/' onClick={(e) => e.preventDefault()}>
-            Data Translator
-          </NavbarBrand>
-          <button
-            className='navbar-toggler'
-            id='navbarNavDropdown'
-            type='button'
-            onClick={() => {
-              document.documentElement.classList.toggle('nav-open');
-              setBodyClick(true);
-            }}
-          >
-            <span className='navbar-toggler-icon' />
-          </button>
-          <UncontrolledCollapse navbar toggler='#navbarNavDropdown'>
-            <Nav navbar>
-              <NavItem className='active'>
-                <NavLink href='/' onClick={(e) => e.preventDefault()}>
-                  Home <span className='sr-only'>(current)</span>
-                </NavLink>
-              </NavItem>
-              <NavItem>
-                <NavLink
-                  href='/DataTranslator'
-                  onClick={(e) => e.preventDefault()}
-                >
-                  Data Translator
-                </NavLink>
-              </NavItem>
-              <NavItem>
-                <NavLink
-                  href='/DataAnalytics'
-                  onClick={(e) => e.preventDefault()}
-                >
-                  Data Analytics
-                </NavLink>
-              </NavItem>
+    <div>
+      <Nav pills>
+        <NavItem>
+          <NavLink href='/' active>
+            Home
+          </NavLink>
+        </NavItem>
 
-              <UncontrolledDropdown nav>
-                <DropdownToggle
-                  aria-haspopup={true}
-                  caret
-                  color='default'
-                  data-toggle='dropdown'
-                  href='#pablo'
-                  id='navbarDropdownMenuLink'
-                  nav
-                  onClick={(e) => e.preventDefault()}
-                >
-                  Data Analytics Team
-                </DropdownToggle>
-                <DropdownMenu aria-labelledby='navbarDropdownMenuLink'>
-                  <DropdownItem
-                    href='/DataScientist'
-                    onClick={(e) => e.preventDefault()}
-                  >
-                    Data Scientist
-                  </DropdownItem>
-                  <DropdownItem
-                    href='/DataEngineer'
-                    onClick={(e) => e.preventDefault()}
-                  >
-                    Data Engineer
-                  </DropdownItem>
-                  <DropdownItem
-                    href='/DataAnalyst'
-                    onClick={(e) => e.preventDefault()}
-                  >
-                    Data Analyst
-                  </DropdownItem>
-                </DropdownMenu>
-              </UncontrolledDropdown>
-            </Nav>
-          </UncontrolledCollapse>
-        </Container>
-      </Navbar>
-    </>
+        <NavItem>
+          <NavLink href='/DataTranslator'>Data Translator</NavLink>
+        </NavItem>
+        <NavItem>
+          <NavLink href='/DataAnalytics'>Data Analytics</NavLink>
+        </NavItem>
+
+        <Dropdown nav isOpen={dropdownOpen} toggle={toggle}>
+          <DropdownToggle nav caret>
+            Data Analytics Team
+          </DropdownToggle>
+          <DropdownMenu>
+            <DropdownItem href='/DataScientist'>Data Scientist</DropdownItem>
+            <DropdownItem href='/DataEngineer'>Data Engineer</DropdownItem>
+            <DropdownItem href='/DataAnalyst'>Data Analyst </DropdownItem>
+          </DropdownMenu>
+        </Dropdown>
+      </Nav>
+    </div>
   );
-}
+};
+
+//
+
+//             <UncontrolledDropdown>
+//               <DropdownToggle
+//                 aria-haspopup={true}
+//                 caret
+//                 color='default'
+//                 data-toggle='dropdown'
+//                 href='/DataAnalytics'
+//                 nav
+//               >
+//                 Data Analytics Team
+//               </DropdownToggle>
+//               <DropdownMenu>
+//                 <DropdownItem href='/DataScientist'>
+//                   Data Scientist
+//                 </DropdownItem>
+//                 <DropdownItem href='/DataEngineer'>Data Engineer</DropdownItem>
+//                 <DropdownItem href='/DataAnalyst'>Data Analyst</DropdownItem>
+//               </DropdownMenu>
+//             </UncontrolledDropdown>
+//           </Nav>
+//         </Container>
+//       </Navbar>
+//     </>
+//   );
+// }
 
 export default NavbarComp;

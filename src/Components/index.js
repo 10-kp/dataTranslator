@@ -17,16 +17,25 @@ const Navbar = () => {
         <Bars />
 
         <NavMenu>
-          <NavLink to='/Home' activeStyle>
+          <NavLink to='/' activeStyle>
             Home
           </NavLink>
-          <NavLink to='/Data' activeStyle>
+          <NavLink to='/DataTranslator' activeStyle>
             Data Translator
           </NavLink>
+          <NavLink to='/DataAnalytics' activeStyle>
+            Data Analytics
+          </NavLink>
+          <NavLink to='/DataScientist' activeStyle>
+            Data Scientist
+          </NavLink>
+          <NavLink to='/DataEngineer' activeStyle>
+            Data Engineer
+          </NavLink>
+          <NavLink to='/DataAnalyst' activeStyle>
+            Data Analyst
+          </NavLink>
         </NavMenu>
-        <NavBtn>
-          <NavLink to='/'></NavLink>
-        </NavBtn>
       </Nav>
     </>
   );

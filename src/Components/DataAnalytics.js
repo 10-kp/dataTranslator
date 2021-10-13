@@ -1,13 +1,18 @@
 import React from 'react';
 import dataCircle from '../Pics/dataAnalyticsCircle.png';
+import { Badge } from 'reactstrap';
 
 function DataAnaytics() {
   return (
     <>
       <h3>
+        Data Analytics <Badge color='secondary'></Badge>
+      </h3>
+
+      <p>
         Data analytics is the broad field of using data and tools to make
         business decisions.
-      </h3>
+      </p>
 
       <p>
         Data analytics is a broad term that defines the concept and practice
