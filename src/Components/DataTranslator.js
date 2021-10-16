@@ -4,7 +4,7 @@ import dataTranlatorRole from '../Pics/translatorRole.jpg';
 function Data() {
   return (
     <>
-      <h3>Data Translator</h3>
+      <h3 class='gap'>Data Translator</h3>
       <p>A data translator is someone who can:</p>
       <ul>
         <li>

@@ -1,10 +1,11 @@
 import React from 'react';
 import dataCircle from '../Pics/dataAnalyticsCircle.png';
 import { Badge } from 'reactstrap';
+import 'App.css';
 
 function DataAnaytics() {
   return (
-    <>
+    <div class='gap'>
       <h3>
         Data Analytics <Badge color='secondary'></Badge>
       </h3>
@@ -57,7 +58,7 @@ function DataAnaytics() {
           machine learning, business rules, and algorithms.
         </li>
       </ul>
-    </>
+    </div>
   );
 }
 

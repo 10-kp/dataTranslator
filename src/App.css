@@ -5,6 +5,22 @@
   font-family: 'Open-Sans', sans-serif;
 } */
 
-/* #Navbar {
-  position: fixed;
-} */
+.navbar {
+  width: 100%;
+  margin-top: 1px !important;
+  margin-bottom: 5px !important;
+  /* position: fixed !important; */
+  padding: 0.2rem 2rem !important;
+  font-size: 1.1rem !important;
+  /* min-height: 5vh; */
+  /* box-sizing: content-box; */
+  /* display: flex; */
+  /* justify-content: flex-start; */
+  background-color: rgb(161, 230, 115);
+  transition: all 0.7s ease-in;
+}
+
+.gap {
+  line-height: 20px;
+  padding-top: 60px;
+}

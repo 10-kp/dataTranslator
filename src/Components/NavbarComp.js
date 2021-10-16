@@ -1,6 +1,8 @@
 import React, { useState } from 'react';
+
 import {
   Nav,
+  Navbar,
   NavItem,
   Dropdown,
   DropdownItem,
@@ -9,13 +11,13 @@ import {
   NavLink,
 } from 'reactstrap';
 
-const NavbarComp = (props) => {
+const NavbarComp = () => {
   const [dropdownOpen, setDropdownOpen] = useState(false);
 
   const toggle = () => setDropdownOpen(!dropdownOpen);
 
   return (
-    <div>
+    <Navbar fixed='top' expand='md'>
       <Nav pills>
         <NavItem>
           <NavLink href='/' active>
@@ -41,36 +43,8 @@ const NavbarComp = (props) => {
           </DropdownMenu>
         </Dropdown>
       </Nav>
-    </div>
+    </Navbar>
   );
 };
-
-//
-
-//             <UncontrolledDropdown>
-//               <DropdownToggle
-//                 aria-haspopup={true}
-//                 caret
-//                 color='default'
-//                 data-toggle='dropdown'
-//                 href='/DataAnalytics'
-//                 nav
-//               >
-//                 Data Analytics Team
-//               </DropdownToggle>
-//               <DropdownMenu>
-//                 <DropdownItem href='/DataScientist'>
-//                   Data Scientist
-//                 </DropdownItem>
-//                 <DropdownItem href='/DataEngineer'>Data Engineer</DropdownItem>
-//                 <DropdownItem href='/DataAnalyst'>Data Analyst</DropdownItem>
-//               </DropdownMenu>
-//             </UncontrolledDropdown>
-//           </Nav>
-//         </Container>
-//       </Navbar>
-//     </>
-//   );
-// }
 
 export default NavbarComp;

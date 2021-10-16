@@ -3,7 +3,7 @@ import React from 'react';
 function Scientist() {
   return (
     <>
-      <h1>Data Scientist</h1>
+      <h3 class='gap'>Data Scientist</h3>
       <ul>
         <li>One of the 3 pilars of Data analytics</li>
         <li>

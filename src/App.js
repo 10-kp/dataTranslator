@@ -12,30 +12,32 @@ import DataAnalytics from './Components/DataAnalytics';
 
 function App() {
   return (
-    <BrowserRouter>
-      <NavbarComp />
-      <Switch>
-        {/* Use Switch */}
-        <Route exact path='/'>
-          <Home />
-        </Route>
-        <Route exact path='/Data Translator'>
+    <div className='App'>
+      <BrowserRouter>
+        <NavbarComp />
+        <Switch>
+          {/* Use Switch */}
+          <Route exact path='/'>
+            <Home />
+          </Route>
+          <Route exact path='/Data Translator'>
+            <Data />
+          </Route>
+          <Route exact path='/DataScientist'>
+            <Scientist />
+          </Route>
+          <Route exact path='/DataEngineer'>
+            <Engineers />
+          </Route>
+          <Route exact path='/DataAnalytics'>
+            <DataAnalytics />
+          </Route>
+          {/* Use another way to render component */}
+          <Route exact path='/DataAnalyst' component={Analyst} />
           <Data />
-        </Route>
-        <Route exact path='/DataScientist'>
-          <Scientist />
-        </Route>
-        <Route exact path='/DataEngineer'>
-          <Engineers />
-        </Route>
-        <Route exact path='/DataAnalytics'>
-          <DataAnalytics />
-        </Route>
-        {/* Use another way to render component */}
-        <Route exact path='/DataAnalyst' component={Analyst} />
-        <Data />
-      </Switch>
-    </BrowserRouter>
+        </Switch>
+      </BrowserRouter>
+    </div>
   );
 }
 

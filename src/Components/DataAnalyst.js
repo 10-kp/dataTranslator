@@ -1,17 +1,8 @@
 import React from 'react';
-import {
-  Card,
-  CardImg,
-  CardBody,
-  CardTitle,
-  CardText,
-  Button,
-} from 'reactstrap';
-
 function Analyst() {
   return (
     <>
-      <h1>Data Analyst</h1>
+      <h3 class='gap'>Data Analyst</h3>
       <ul>
         <li>
           Data analysts use data to perform reporting and direct analysis.
