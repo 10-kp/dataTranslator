@@ -1,14 +1,23 @@
 import React from 'react';
 import datapic from '../Pics/dataFlow.png';
 import { Button } from 'reactstrap';
+import Typewriter from 'typewriter-effect';
 import 'App.css';
 
 function Home() {
   return (
     <div>
-      <h1 class='gap'>Welcome to the Data Translator Page!</h1>
+      <Typewriter
+        options={{
+          strings: ['Welcome to the Data Translator Page!'],
+          autoStart: true,
+          loop: true,
+          deleteSpeed: 20,
+        }}
+      />
+      {/* <h1 class='gap'></h1> */}
 
-      <hr className='my-2' />
+      {/* <hr className='my-2' /> */}
 
       <p className='lead'>
         Part of the Data Analytics team, a Data Translator unlocks the value of

@@ -1,5 +1,4 @@
 import React, { useState } from 'react';
-
 import {
   Nav,
   Navbar,
@@ -24,7 +23,6 @@ const NavbarComp = () => {
             Home
           </NavLink>
         </NavItem>
-
         <NavItem>
           <NavLink href='/DataTranslator'>Data Translator</NavLink>
         </NavItem>
