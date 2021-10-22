@@ -13,7 +13,7 @@
 
 ## Description
 
-A descriptive of Data Analytics using React.
+Usng React to build an informative site on Data Translator.
 
 ![Screenshot]()
 
@@ -23,11 +23,13 @@ The following steps were undertaken to create this program
 
 - Create and download the repository in gitHub
 - Open VS Code
-
-  - Execut Create React App: Run npx create-react-app <appname>
-
+- Execute Create React App: Run npx create-react-app
 - React downloads many dependencies. Download the following dependencies
 
+  - bootstrap
+  - jquery
+  - Node-sass
+  - react dom
   - react-bootstrap
 
 - 'npm start' in the command line
@@ -44,6 +46,6 @@ This application uses the following packages:
 
 ## Link
 
-You can see the link of this app [LINK]()
+You can see the link of this app [LINK](https://10-kp.github.io/dataTranslator/)
 
 You can view the GitHub here [GITHUB](https://github.com/10-kp/dataTranslator)
