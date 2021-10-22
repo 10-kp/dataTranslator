@@ -2,8 +2,8 @@ import React from 'react';
 
 function Engineers() {
   return (
-    <>
-      <h3 class='gap'>Data Engineer</h3>
+    <div class='padding'>
+      <h3>Data Engineer</h3>
       <ul>
         <li>
           Data engineers are responsible for finding trends in data sets and
@@ -56,7 +56,7 @@ function Engineers() {
         <li>Data acquisition</li>
         <li>Develop data set processes</li>
       </ul>
-    </>
+    </div>
   );
 }
 

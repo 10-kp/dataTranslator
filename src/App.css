@@ -1,7 +1,9 @@
-* {
+*,
+*::after,
+*::before {
   box-sizing: border-box;
-  margin: 0;
-  padding: 0.2vmax;
+  margin: 0px;
+  padding: 0.1vmax;
 }
 
 .navbar {
@@ -15,22 +17,14 @@
   transition: all 0.7s ease-in;
 }
 
-ul.nav li a {
-  color: #000704 !important;
+.padding {
+  padding: 60px;
 }
 
-ul.nav li a:hover,
-ul.nav li a:active {
-  color: #030300 !important;
-}
-
-ul.nav li.active a {
-  color: #198754 !important;
-}
-
-.gap {
-  line-height: 20px;
-  padding-top: 60px;
+.card-img-top {
+  padding: 0px !important;
+  opacity: 0.8 !important;
+  border-radius: 10px !important;
 }
 
 .Typewriter__wrapper {
@@ -43,9 +37,9 @@ ul.nav li.active a {
   color: #070aac !important;
 }
 
-@media screen and (max-width: 768px) and (min-width: 350px) {
+@media screen and (min-width: 1735px) {
   .navbar {
-    background: #8ac4ff;
+    background: #388fe6;
     width: 100%;
     flex-direction: column;
   }

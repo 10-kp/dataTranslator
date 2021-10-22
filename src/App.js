@@ -1,6 +1,7 @@
 import React from 'react';
 import { BrowserRouter, Route, Switch } from 'react-router-dom';
 import './App.css';
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 import Home from './Components/Home';
 import Data from './Components/DataTranslator';
@@ -12,7 +13,7 @@ import DataAnalytics from './Components/DataAnalytics';
 
 function App() {
   return (
-    <div className='App'>
+    <div class='App'>
       <BrowserRouter>
         <NavbarComp />
         <Switch>

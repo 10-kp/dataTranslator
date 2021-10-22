@@ -3,8 +3,8 @@ import dataTranlatorRole from '../Pics/translatorRole.jpg';
 
 function Data() {
   return (
-    <>
-      <h3 class='gap'>Data Translator</h3>
+    <div class='padding'>
+      <h3>Data Translator</h3>
       <p>A data translator is someone who can:</p>
       <ul>
         <li>
@@ -56,7 +56,7 @@ function Data() {
         <li>Excessive focus on the model over the problem</li>
         <li>Lack of empathy</li>
       </ul>
-    </>
+    </div>
   );
 }
 

@@ -1,14 +1,12 @@
 import React from 'react';
 import dataCircle from '../Pics/dataAnalyticsCircle.png';
-import { Badge } from 'reactstrap';
+
 import 'App.css';
 
 function DataAnaytics() {
   return (
-    <div class='gap'>
-      <h3>
-        Data Analytics <Badge color='secondary'></Badge>
-      </h3>
+    <div class='padding'>
+      <h3>Data Analytics</h3>
 
       <p>
         Data analytics is the broad field of using data and tools to make

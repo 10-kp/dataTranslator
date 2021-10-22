@@ -1,8 +1,9 @@
 import React from 'react';
+
 function Analyst() {
   return (
-    <>
-      <h3 class='gap'>Data Analyst</h3>
+    <div class='padding'>
+      <h3>Data Analyst</h3>
       <ul>
         <li>
           Data analysts use data to perform reporting and direct analysis.
@@ -51,7 +52,7 @@ function Analyst() {
           systems
         </li>
       </ul>
-    </>
+    </div>
   );
 }
 

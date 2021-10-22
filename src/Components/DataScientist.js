@@ -2,8 +2,8 @@ import React from 'react';
 
 function Scientist() {
   return (
-    <>
-      <h3 class='gap'>Data Scientist</h3>
+    <div class='padding'>
+      <h3>Data Scientist</h3>
       <ul>
         <li>One of the 3 pilars of Data analytics</li>
         <li>
@@ -75,7 +75,7 @@ function Scientist() {
           team.
         </li>
       </ul>
-    </>
+    </div>
   );
 }
 
