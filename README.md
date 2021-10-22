@@ -15,7 +15,7 @@
 
 Usng React to build an informative site on Data Translator.
 
-![Screenshot]()
+![Screenshot](src/Pics/screenshot.png)
 
 ## Installation
 
@@ -46,6 +46,6 @@ This application uses the following packages:
 
 ## Link
 
-You can see the link of this app [LINK](https://10-kp.github.io/dataTranslator/)
+You can see the link of this app [LINK](https://peaceful-dawn-51992.herokuapp.com/)
 
 You can view the GitHub here [GITHUB](https://github.com/10-kp/dataTranslator)
