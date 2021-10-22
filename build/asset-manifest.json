@@ -1,0 +1,27 @@
+{
+  "files": {
+    "main.css": "/static/css/main.92813ea1.chunk.css",
+    "main.js": "/static/js/main.bc2b1497.chunk.js",
+    "main.js.map": "/static/js/main.bc2b1497.chunk.js.map",
+    "runtime-main.js": "/static/js/runtime-main.640ea5ae.js",
+    "runtime-main.js.map": "/static/js/runtime-main.640ea5ae.js.map",
+    "static/css/2.d8cb5cde.chunk.css": "/static/css/2.d8cb5cde.chunk.css",
+    "static/js/2.e3375ac3.chunk.js": "/static/js/2.e3375ac3.chunk.js",
+    "static/js/2.e3375ac3.chunk.js.map": "/static/js/2.e3375ac3.chunk.js.map",
+    "index.html": "/index.html",
+    "static/css/2.d8cb5cde.chunk.css.map": "/static/css/2.d8cb5cde.chunk.css.map",
+    "static/css/main.92813ea1.chunk.css.map": "/static/css/main.92813ea1.chunk.css.map",
+    "static/js/2.e3375ac3.chunk.js.LICENSE.txt": "/static/js/2.e3375ac3.chunk.js.LICENSE.txt",
+    "static/media/dataAnalyticsCircle.66f105b5.png": "/static/media/dataAnalyticsCircle.66f105b5.png",
+    "static/media/dataFlow.5dfe8ff3.png": "/static/media/dataFlow.5dfe8ff3.png",
+    "static/media/logo.dc4cf497.png": "/static/media/logo.dc4cf497.png",
+    "static/media/translatorRole.254266c3.jpg": "/static/media/translatorRole.254266c3.jpg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.640ea5ae.js",
+    "static/css/2.d8cb5cde.chunk.css",
+    "static/js/2.e3375ac3.chunk.js",
+    "static/css/main.92813ea1.chunk.css",
+    "static/js/main.bc2b1497.chunk.js"
+  ]
+}
